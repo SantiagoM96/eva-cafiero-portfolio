@@ -8,11 +8,13 @@ export default {
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',
-      'mobileLandscape': { 'raw': '(max-height: 400px) and (orientation: landscape)' },
-      '-md': { 'raw': '(max-width: 700px)' },
     },
 
     extend: {
+      screens: {
+        'mobileLandscape': { 'raw': '(max-height: 400px) and (orientation: landscape)' },
+        '-md': { 'raw': '(max-width: 700px)' },
+      },
       fontFamily: {
         body: ['Archivo', 'sans-serif'],
         'magicalGameFont': ['magicalGameFont', 'sans-serif']

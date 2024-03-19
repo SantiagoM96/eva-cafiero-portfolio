@@ -4,7 +4,7 @@ import { ProjectHeadProps } from "../../../../models/types";
 const ProjectHead: React.FC<ProjectHeadProps> = ({ title, location, year, textColor }) =>
 (
     <>
-        <article className="absolute z-[1000] px-[2.5rem] w-3/4 lg:p-0 bottom-[10%] lg:-bottom-[245px] lg:left-[6rem]">
+        <article className="absolute z-[1000] px-[2.5rem] w-3/4 mobileLandscape:bottom-[20px] lg:p-0 bottom-[10%] lg:-bottom-[245px] lg:left-[6rem]">
             <h1 className={`${styles.titleStyles} text-[${textColor}] `}>
                 {title}</h1>
             <div className={`flex flex-col lg:flex-row gap-[2rem] mobileLandscape:gap-[.5rem] 
