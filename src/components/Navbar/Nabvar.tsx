@@ -1,6 +1,6 @@
 import { NavLink, useLocation, Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavlinkItem } from "../../models/types";
 import { navLinks } from "../../data/data";
 import styles from "../../styles";
@@ -8,15 +8,20 @@ import logo from "../../assets/logo.gif";
 
 const Navbar = () => {
     const [navIsOpen, setNavIsOpen] = useState<boolean>(false);
+    const [isProject1, setIsProject1] = useState<boolean>(false);
 
     const location = useLocation();
-    const obtenerIdProyecto = () => {
-        const partesURL = location.pathname.split("/");
-        return partesURL[2];
-    };
 
-    const idProyectoActual = obtenerIdProyecto();
-    const isProject1: boolean = idProyectoActual === "1";
+    useEffect(() => {
+        const obtenerIdProyecto = () => {
+            const partesURL = location.pathname.split("/");
+            return partesURL[2];
+        };
+
+        const idProyectoActual = obtenerIdProyecto();
+        setIsProject1(idProyectoActual === "1");
+    }, [location.pathname]);
+
     const isHome = location.pathname === "/";
 
     const toggleNavBar = () => setNavIsOpen(prev => !prev);
