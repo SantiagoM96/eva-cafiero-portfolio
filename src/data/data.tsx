@@ -251,16 +251,16 @@ export const resumeData: ResumeData = [
         subtitle: "mención especial escultura",
         list: [
           {
+            spanBold: "110° Salón Nacional de Bellas Artes",
+            text: '/ Centro cultural Borges / 2022',
+          },
+          {
             spanBold: "101° Salón provincial",
             text: '/ Museo Pettoruti / 2024',
           },
           {
             spanBold: "100° Salón provincial",
             text: '/ Museo Pettoruti / 2023',
-          },
-          {
-            spanBold: "110° Salón Nacional de Bellas Artes",
-            text: '/ Centro cultural Borges / 2022',
           },
         ]
       }
