@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ArticleOne from "./ArticleOne";
 import Reveal from "../../../components/Reveal/Reveal";
 import Loader from "../../../components/Loader/Loader";
-import { GetInTouchSection } from "../../../imports/index";
+import { Footer } from "../../../imports/index";
 
 const Bio = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -29,7 +29,7 @@ const Bio = () => {
             >
                 <section>
                     <ArticleOne />
-                    <GetInTouchSection />
+                    <Footer />
                 </section>
             </Reveal>
         </>

@@ -1,6 +1,6 @@
 import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Bio, Home, AlwaysUp, Contacto, Resume, Navbar, ProjectsContainer, ScrollToTopButton } from './imports/index';
+import { Bio, Home, AlwaysUp, Contacto, Resume, Navbar, ProjectsListContainer, ScrollToTopButton } from './imports/index';
 
 
 import Project from './pages/Projects/components/Project/Project';
@@ -14,7 +14,7 @@ function App() {
           <Route>
             <Route path="/" element={<Home />} />
             <Route path="/bio" element={<Bio />} />
-            <Route path="/proyectos" element={<ProjectsContainer />} />
+            <Route path="/proyectos" element={<ProjectsListContainer />} />
             <Route path="/proyectos/:id" element={<Project />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/resume" element={<Resume />} />

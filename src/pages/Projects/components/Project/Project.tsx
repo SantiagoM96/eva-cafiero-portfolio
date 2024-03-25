@@ -1,8 +1,8 @@
-import { GetInTouchSection, Loader, Reveal } from "../../../../imports/index"
+import { Footer, Loader, Reveal } from "../../../../imports/index"
 import { projects } from "../../../../data/data"
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
-import ProjectCarousel from "../../ProjectSlider/ProjectSlider"
+import ProjectCarousel from "../ProjectSlider/ProjectSlider"
 import ProjectHead from "./ProjectHead"
 import ProjectArticleOne from "./ProjectArticleOne"
 import ProjectArticleTwo from "./ProjectArticleTwo"
@@ -72,7 +72,7 @@ const Project = () => {
                         figure={selectedProject.data.figure1} figcaption={selectedProject.data.figcaption1}
                         staticImage2={selectedProject.data.staticImage2} />
 
-                    <div className={`h-[300px] md:h-screen w-full bg-center bg-contain md:bg-cover bg-no-repeat -md:my-[1.75rem] my-[4rem]`}
+                    <div className={`h-[300px] md:h-screen w-full bg-center bg-contain md:bg-cover bg-no-repeat max-md:my-[1.75rem] my-[4rem]`}
                         style={{ backgroundImage: `url(${selectedProject.data.staticImage})` }}></div>
 
                     <ProjectArticleTwo
@@ -86,7 +86,7 @@ const Project = () => {
 
                     <ProjectCarousel sliderImages={selectedProject.data.sliderImages} />
 
-                    <GetInTouchSection textColor={selectedProject.textColor} />
+                    <Footer textColor={selectedProject.textColor} />
                 </section >
             </Reveal>
         </>

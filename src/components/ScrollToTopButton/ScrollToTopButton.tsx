@@ -40,7 +40,7 @@ const ScrollToTopButton = () => {
     <>
       <button
         className={`${isVisible ? 'opacity-1 scale-1' : 'opacity-0 scale-0'} transition-all duration-500
-            fixed bottom-8 right-2 md:right-6 ${fontColor} ${fontColor === 'text-[#fff]' ? 'bg-[#222]' : 'bg-[#fff]'} text-[0.875em] md:text-[1em] w-[2rem] h-[2rem] z-[40]
+            fixed bottom-20 lg:bottom-12 right-2 md:right-6 ${fontColor} ${fontColor === 'text-[#fff]' ? 'bg-[#222]' : 'bg-[#fff]'} text-[0.875em] md:text-[1em] w-[2rem] h-[2rem] z-[40]
             md:w-[3.125rem] md:h-[3.125rem] rounded-full`}
         onClick={scrollToTop}>
         <FontAwesomeIcon icon={faChevronUp} />

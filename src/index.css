@@ -15,7 +15,7 @@ html, body {
     cursor: url('./assets/customCursor.png'), auto;
 }
 
-a, button, .customCursor{
+a, button, .customCursor {
     cursor: url('./assets/customCursor2.png'), auto;
 }
 
@@ -27,8 +27,30 @@ a, button, .customCursor{
 .oval-form {
     -webkit-clip-path: ellipse(50% 40% at 50% 50%);
     clip-path: ellipse(50% 40% at 50% 50%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .underline-light {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+@screen lg {
+    .animatedUnderline::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0%;
+        height: 1.5px;
+        background-color: currentColor;
+        opacity: 0;
+        transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    }
+
+    .animatedUnderline:hover::after {
+        width: 100%;
+        opacity: 1;
+    }
 }

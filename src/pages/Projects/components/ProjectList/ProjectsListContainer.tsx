@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react"
 import { projects } from "../../../../data/data";
-import { GetInTouchSection } from "../../../../imports/index"
+import { Footer } from "../../../../imports/index"
 import ProjectsList from "./ProjectsList";
 import Reveal from "../../../../components/Reveal/Reveal";
 import Loader from "../../../../components/Loader/Loader";
 
-const ProjectsContainer = () => {
+const ProjectsListContainer = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -28,11 +28,11 @@ const ProjectsContainer = () => {
             >
                 <section>
                     {projects && <ProjectsList projects={projects} />}
-                    <GetInTouchSection />
+                    <Footer />
                 </section>
             </Reveal>
         </>
     )
 }
 
-export default ProjectsContainer
+export default ProjectsListContainer

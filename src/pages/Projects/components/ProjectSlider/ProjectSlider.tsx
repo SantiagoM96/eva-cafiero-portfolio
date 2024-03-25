@@ -1,6 +1,6 @@
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
-import { SliderImages } from '../../../models/types';
+import { SliderImages } from '../../../../models/types';
 import CustomLeftArrow from './CustomLeftArrow';
 import CustomRightArrow from './CustomRightArrow';
 import { MouseEventHandler } from 'react';
@@ -41,6 +41,7 @@ const ProjectSlider = ({ sliderImages }: { sliderImages: SliderImages[] }) => {
                     slideDuration={1000}
                     renderLeftNav={(onClick, disabled) => renderLeftNav(onClick, disabled)}
                     renderRightNav={(onClick, disabled) => renderRightNav(onClick, disabled)}
+                    lazyLoad
                 />
             </div>
         </>

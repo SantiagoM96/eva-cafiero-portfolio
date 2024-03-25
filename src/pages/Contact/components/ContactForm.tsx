@@ -41,7 +41,7 @@ const ContactForm = () => {
     }, [result]);
 
     return (
-        <form onSubmit={onSubmit} className="flex flex-col items-center justify-center lg:absolute gap-[1rem] lg:px-8 pt-6 pb-8 sm:m-4 w-full lg:h-[80%] ">
+        <form onSubmit={onSubmit} className="flex flex-col items-center justify-center lg:absolute gap-[.5rem] lg:gap-[1rem] lg:px-8 pt-6 pb-8 sm:m-4 w-full lg:h-[80%] ">
             <div className="lg:w-1/4 w-full mb-4">
                 <label className={labelStyle} htmlFor="email">Correo Electrónico</label>
                 <input
@@ -55,7 +55,7 @@ const ContactForm = () => {
                     required
                 />
             </div>
-            <div className="lg:w-1/4 w-full mb-6">
+            <div className="lg:w-1/4 w-full mb-4">
                 <label className={labelStyle} htmlFor="message">Mensaje</label>
                 <textarea
                     id="message"

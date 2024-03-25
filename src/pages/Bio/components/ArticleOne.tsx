@@ -13,7 +13,7 @@ const ArticleOne = () =>  (
                     }}
                     transition={{ duration: .8, delay: .3 }}>
                     <figure className='flex flex-col md:flex-row-reverse items-center md:items-end md:justify-between w-full py-[1rem] lg:py-[6rem] gap-[1rem]'>
-                        <img src="https://i.ibb.co/1RqBTjM/retrato-RESIZE.jpg" alt="Foto de perfil de Eva Moro Cafiero" className='w-full md:w-3/4 max-h-screen' />
+                        <img loading="lazy" src="https://i.ibb.co/1RqBTjM/retrato-RESIZE.jpg" alt="Foto de perfil de Eva Moro Cafiero" className='w-full md:w-3/4 max-h-screen ' />
                     </figure>
                 </Reveal>
                 <p className={styles.paragraphStyles}>Vivió en San Juan por un tiempo, donde estudió en el Centro Polivalente de Arte y el Colegio Central Universitario UNSJ, ambos con orientación en Artes Visuales. En 2020 regresó a La Plata, completó sus estudios secundarios en el Bachillerato de Bellas Artes de la UNLP teniendo clínica y clases con Leonel Pinola, Agustina Girardi, Andrea Poli y Alberto Dreizzen, entre otres. Participó en el taller de escultura con Daniel Basso, Ramos Generales (2023), y desde 2022 realiza clínica de obra con Flavia Da Rin. Actualmente forma parte del Programa de artistas de la Universidad Di Tella para el período 2023-24, cursa la carrera de Diseño de Imagen y Sonido en la FADU y participa del taller de escultura y clínica de obra de Luis Terán.</p>

@@ -1,4 +1,4 @@
-import { GetInTouchSection } from "../../../imports/index"
+import { Footer } from "../../../imports/index"
 import { resumeData } from "../../../data/data"
 import { useEffect, useState } from "react"
 import ResumeArticle from "./ExperienceSection"
@@ -30,7 +30,7 @@ const Resume = () => {
                 <section>
                     <ResumeArticle resumeData={resumeData} />
                     <MasInfo />
-                    <GetInTouchSection />
+                    <Footer />
                 </section>
             </Reveal>
         </>

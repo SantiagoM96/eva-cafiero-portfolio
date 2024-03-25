@@ -72,6 +72,9 @@ export interface InfoYEntrevistas {
     title: string;
     url: string
 }
+export interface GetInTouchProps {
+    textColor?: TextColor
+}
 
 export interface CustomVariants extends Variants {
     hidden: { opacity?: number; x?: number; y?: number };

@@ -7,26 +7,31 @@ import styles from "../../styles";
 import logo from "../../assets/logo.gif";
 
 const Navbar = () => {
+
     const [navIsOpen, setNavIsOpen] = useState<boolean>(false);
-    const [isProject1, setIsProject1] = useState<boolean>(false);
-
-    const location = useLocation();
-
-    useEffect(() => {
-        const obtenerIdProyecto = () => {
-            const partesURL = location.pathname.split("/");
-            return partesURL[2];
-        };
-
-        const idProyectoActual = obtenerIdProyecto();
-        setIsProject1(idProyectoActual === "1");
-    }, [location.pathname]);
-
-    const isHome = location.pathname === "/";
-
     const toggleNavBar = () => setNavIsOpen(prev => !prev);
 
-    const fontColor = (isHome && !navIsOpen) || (isProject1 && !navIsOpen) ? "text-[#fff]" : "text-[#000]";
+    const location = useLocation();
+    const isHome: boolean = location.pathname === "/";
+    const isProject1: boolean = location.pathname === "/proyectos/1"
+
+    useEffect(() => {
+        setNavIsOpen(false);
+    }, [location.pathname]);
+
+    let fontColor: string;
+
+    switch (true) {
+        case isHome:
+            fontColor = navIsOpen ? "text-[#000]" : "text-[#fff]";
+            break;
+        case isProject1:
+            fontColor = navIsOpen ? "text-[#000]" : "text-[#fff]";
+            break;
+        default:
+            fontColor = "text-[#000]";
+            break;
+    }
 
     return (
         <>
@@ -37,7 +42,7 @@ const Navbar = () => {
                 <nav className="lg:w-4/5">
                     <ul className={`${styles.ulStyles} ${navIsOpen ? 'translate-x-0' : 'translate-x-[100%]'} lg:translate-x-0`}>
                         {navLinks.map(({ to, title }: NavlinkItem, index: number) => (
-                            <li key={index} className={`${styles.linkStyles} w-28 text-center lg:text-[#000]`} onClick={toggleNavBar}>
+                            <li key={index} className={`${styles.linkStyles} w-28 text-center lg:text-[#000]`}>
                                 <NavLink className={`${fontColor}`} to={to}>{title}*</NavLink>
                             </li>
                         ))}
@@ -48,8 +53,8 @@ const Navbar = () => {
                 </button>
             </header>
         </>
-
     );
 };
+
 
 export default Navbar;
