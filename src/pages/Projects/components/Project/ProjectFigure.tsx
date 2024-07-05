@@ -13,7 +13,7 @@ const ProjectFigure: React.FC<ProjectFigureProps> = ({ textColor, figure, figcap
       <figure className={`flex flex-col md:flex-row-reverse items-center md:items-end md:justify-between w-full gap-[1rem] ${styles}`}>
         <img loading='lazy' src={figure} alt={figcaption} className='w-full md:w-3/4 max-h-screen object-contain' />
         {figcaption && (
-          <figcaption className={`text-[${textColor}] lg:mr-[4rem] text-center md:text-left lg:w-2/3`}>
+          <figcaption className={`text-${textColor} lg:mr-[4rem] text-center md:text-left lg:w-2/3`}>
             <p className={`text-${textColor} lg:text-[1.5em] text-[1em]`}>{figcaption}</p>
           </figcaption>
         )}

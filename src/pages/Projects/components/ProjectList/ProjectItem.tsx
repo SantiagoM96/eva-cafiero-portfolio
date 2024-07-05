@@ -12,7 +12,7 @@ const ProjectItem: React.FC<{ project: ProjectI }> = ({ project }) => (
                     {project.location} / {project.year}
                 </span>
                 <Link to={`${project.id}`}>
-                    <button className="bg-[#000] text-[#fff] w-[70px] h-[25px] text-[0.625em] sm:text-[1em] sm:w-[120px] sm:h-[40px] rounded-[5px] mt-2 lg:m-0">Ver +</button>
+                    <button className="bg-black text-white w-[70px] h-[25px] text-[0.625em] sm:text-[1em] sm:w-[120px] sm:h-[40px] rounded-[5px] mt-2 lg:m-0">Ver +</button>
                 </Link>
             </figcaption>
             <div className="xl:w-2/3 flex items-center justify-end">

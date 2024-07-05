@@ -23,13 +23,13 @@ const Navbar = () => {
 
     switch (true) {
         case isHome:
-            fontColor = navIsOpen ? "text-[#000]" : "text-[#fff]";
+            fontColor = navIsOpen ? "text-black" : "text-white";
             break;
         case isProject1:
-            fontColor = navIsOpen ? "text-[#000]" : "text-[#fff]";
+            fontColor = navIsOpen ? "text-black" : "text-white";
             break;
         default:
-            fontColor = "text-[#000]";
+            fontColor = "text-black";
             break;
     }
 
@@ -42,7 +42,7 @@ const Navbar = () => {
                 <nav className="lg:w-4/5">
                     <ul className={`${styles.ulStyles} ${navIsOpen ? 'translate-x-0' : 'translate-x-[100%]'} lg:translate-x-0`}>
                         {navLinks.map(({ to, title }: NavlinkItem, index: number) => (
-                            <li key={index} className={`${styles.linkStyles} w-28 text-center lg:text-[#000]`}>
+                            <li key={index} className={`${styles.linkStyles} w-28 text-center lg:text-black`}>
                                 <NavLink className={`${fontColor}`} to={to}>{title}*</NavLink>
                             </li>
                         ))}

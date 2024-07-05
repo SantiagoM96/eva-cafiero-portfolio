@@ -37,7 +37,7 @@ export const projects: ProjectI[] = [
     location: "AURA Fábrica - Buenos Aires, Arg",
     year: '2023',
     listImage: "https://i.ibb.co/wCk10nB/IMAGEN-1-Y-2-LISTA-DE-PROYECTOS-E-INICIAL-web1.jpg",
-    textColor: "#fff",
+    textColor: "white",
     data: {
       coverImage: "https://i.ibb.co/wCk10nB/IMAGEN-1-Y-2-LISTA-DE-PROYECTOS-E-INICIAL-web1.jpg",
       staticImage: "https://i.ibb.co/FnYXzfy/IMAGEN-4-web1.jpg",
@@ -66,7 +66,7 @@ export const projects: ProjectI[] = [
     location: "La Plata - Buenos Aires, Arg",
     year: '2021 - 2023',
     listImage: "https://i.ibb.co/pyXt00X/IMAGEN-1.jpg",
-    textColor: "#000",
+    textColor: "black",
     data: {
       coverImage: "https://i.ibb.co/g78Synm/imagen-2.jpg",
       staticImage: "https://i.ibb.co/DVgSMrV/imagen-4.jpg",
@@ -91,7 +91,7 @@ export const projects: ProjectI[] = [
     location: "La Plata - Buenos Aires, Arg",
     year: '2023',
     listImage: "https://i.ibb.co/kHSLMr1/IMAGEN-1-web.jpg",
-    textColor: "#000",
+    textColor: "black",
     data: {
       coverImage: videoBiomorfismos,
       staticImage: "https://i.ibb.co/H7RwSZH/IMAGEN-4-web.jpg",
@@ -120,7 +120,7 @@ export const projects: ProjectI[] = [
     location: "NN galería - Buenos Aires, Arg",
     year: '2023',
     listImage: "https://i.ibb.co/NYvwMkR/IMAGEN-1-Y-2.jpg",
-    textColor: "#fff",
+    textColor: "white",
     data: {
       coverImage: "https://i.ibb.co/NYvwMkR/IMAGEN-1-Y-2.jpg",
       staticImage: "https://i.ibb.co/fpQfp6N/IMAGEN-4-web.jpg",
@@ -145,7 +145,7 @@ export const projects: ProjectI[] = [
     location: "Media Galería - Buenos Aires, Arg",
     year: '2023',
     listImage: "https://i.ibb.co/PMxn8WW/IMAGEN-1.jpg",
-    textColor: "#000",
+    textColor: "black",
     data: {
       coverImage: videoFlatt,
       staticImage: "https://i.ibb.co/WvsjsHq/IMAGESN-4.jpg",

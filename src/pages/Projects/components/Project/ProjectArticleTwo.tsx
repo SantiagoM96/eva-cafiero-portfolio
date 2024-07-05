@@ -9,8 +9,8 @@ const ProjectArticleTwo: React.FC<ProjectArticleProps> = ({ figure, figcaption, 
                     figcaption={figcaption}
                     textColor={textColor} />
                 <div>
-                    <p className={`${paragraphClassname} text-[${textColor}] mb-5`}>{paragraph1}</p>
-                    <p className={`${paragraphClassname} text-[${textColor}]`}>{paragraph2}</p>
+                    <p className={`${paragraphClassname} text-${textColor} mb-5`}>{paragraph1}</p>
+                    <p className={`${paragraphClassname} text-${textColor}`}>{paragraph2}</p>
                 </div>
             </article>
         </>

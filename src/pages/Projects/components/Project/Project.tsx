@@ -38,11 +38,11 @@ const Project = () => {
         <>
             <Reveal variants={{ hidden: { opacity: 0 }, visible: { opacity: 2 } }} transition={{ duration: 1, delay: .1 }}>
 
-                <section className={`min-h-screen w-full ${selectedProject.textColor === '#fff' ? 'bg-[#000]' : 'bg-[#fff]'} pt-[90vh] md:pt-[100vh] flex flex-col justify-center`}>
+                <section className={`min-h-screen w-full ${selectedProject.textColor === 'white' ? 'bg-black' : 'bg-white'} pt-[90vh] md:pt-[100vh] flex flex-col justify-center`}>
 
                     {isVideo ? (
                         <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-                            <div className='w-full h-full bg-[#000] opacity-5 absolute top-0 left-0 z-40'></div>
+                            <div className='w-full h-full bg-black opacity-5 absolute top-0 left-0 z-40'></div>
                             <video className="relative object-cover h-full w-full" autoPlay muted loop>
                                 <source src={selectedProject.data.coverImage} type="video/mp4" />
                             </video>
@@ -53,7 +53,7 @@ const Project = () => {
                                 background: `url("${selectedProject.data.coverImage}") 
                 center ${selectedProject.id === '2' ? 'center' : 'top -3rem'} / cover no-repeat`,
                             }}>
-                            <div className='w-full h-full bg-[#000] opacity-5 absolute top-0 left-0 z-40'></div>
+                            <div className='w-full h-full bg-black opacity-5 absolute top-0 left-0 z-40'></div>
                         </div>
                     )}
 

@@ -1,8 +1,8 @@
 import { TextColor } from "../../models/types"
 import { Link } from "react-router-dom"
 
-const DevelopedByButton = ({ pageTextColor = '#000' }: { pageTextColor?: TextColor }) => {
-    const color: string = pageTextColor === '#000' ? 'text-[#000]' : 'text-[#fff]';
+const DevelopedByButton = ({ pageTextColor = 'black' }: { pageTextColor?: TextColor }) => {
+    const color: string = pageTextColor === 'black' ? 'text-black' : 'text-white';
     return (
         <>
             <div className="absolute customCursor right-1/2 transform translate-x-1/2 lg:translate-x-0 bottom-6 lg:bottom-14 lg:right-24 w-auto z-50">

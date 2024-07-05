@@ -5,7 +5,7 @@ export interface NavlinkItem {
     title: string;
 }
 
-export type TextColor = "#fff" | "#000";
+export type TextColor = "white" | "black";
 export interface ProjectI {
     id: string;
     title: string;

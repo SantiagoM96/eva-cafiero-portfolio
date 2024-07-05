@@ -70,7 +70,7 @@ const ContactForm = () => {
             <input type="hidden" name="subject" value="Nuevo correo desde mi portfolio" />
             <div className="h-captcha" data-captcha="true"></div>
             <button
-                className="text-[#fff] bg-[#000] w-full lg:w-1/4 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="text-white bg-black w-full lg:w-1/4 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit">
                 {result}
             </button>
